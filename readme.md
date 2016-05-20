@@ -31,8 +31,4 @@ Stretch goals include -
 
 ##Wireframe
 
-
-<img src="./IMG_3479 (1).JPG"/>
-
-* **[ERD](https://github.com/daviefish/Project-4/blob/master/IMG_3479%20(1).JPG)** _(Wireframe)_
-
+<img src="./Wireframe1.JPG"/>
