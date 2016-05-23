@@ -1,15 +1,33 @@
-<p>{{ ctrl.hello }}</p>
+<div class="container">
 
-<button ng-click="ctrl.randomTweet()">BUTTON</button>
+  <h1> Guess That Tweet ! </h1>
 
-<div>
-  {{ ctrl.tweet }}
+  <p>
+    {{ ctrl.tweet }}
+  </p>
+
+  <br>
+
+  <button ng-click="ctrl.randomTweet()" class="btn btn-success">New Tweet!</button>
+
+  <br>
+  <br>
+
+  <div>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden">{{ ctrl.tweeter }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick1)" class="btn btn-primary button_array hidden"> {{ ctrl.tweeterNotPick1 }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden">{{ ctrl.tweeterNotPick2 }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden">{{ ctrl.tweeterNotPick3 }}</button>
+  </div>
+
+  <br>
+  <br>
+
+  <label>Scoreboard</label>
+
+  <br>
+
+  <div>{{ ctrl.counter }}</div>
+
+
 </div>
-
-<div>
-  {{ ctrl.tweeter }}
-</div>
-
-<button ng-click="ctrl.checkTweeter('realDonaldTrump')">Donald Trump</button>
-<button ng-click="ctrl.checkTweeter('kanyewest')">Kanye West</button>
-<button ng-click="ctrl.checkTweeter('justinbieber')">Justin Bieber</button>
