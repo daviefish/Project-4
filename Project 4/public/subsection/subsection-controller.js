@@ -13,6 +13,8 @@
 
     self.tweet = '';
 
+    self.randomTweet = randomTweet;
+
     // function that cycles through 4 seperate twitter feeds to pull a tweet
     function randomTweet() {
       var twitterProfiles = ['realDonaldTrump', 'kanyewest', 'justinbieber'];
@@ -40,7 +42,7 @@
         console.log(self.tweet);
       });
     }
-    randomTweet();
+    // randomTweet();
 
   }
 
