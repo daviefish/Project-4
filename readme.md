@@ -5,7 +5,7 @@
 <img src="https://pbs.twimg.com/profile_images/666407537084796928/YBGgi9BO.png" width="50" height="50" />
 
 
-My Project 4 will consist of a Twitter Game in which you have to guess who said what tweet. 
+My Project 4 will consist of a `Twitter Game in which you have to guess who said what tweet. 
 
 Will Feature Donald Trump and Kanye West, as well as other hilarious twitter individuals. 
 
