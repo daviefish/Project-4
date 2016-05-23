@@ -1,4 +1,4 @@
-# MEAN Boilerplate
+	# MEAN Boilerplate
 
 ## Getting Started
 

@@ -13,7 +13,7 @@
   function config($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('subsection', {
-        url: '/subsection',
+        url: '',
         templateUrl: 'subsection/subsection.html',
         controller: 'SubsectionController as ctrl'
       });
