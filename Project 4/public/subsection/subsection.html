@@ -8,26 +8,26 @@
 
   <br>
 
-  <button ng-click="ctrl.randomTweet()" class="btn btn-success">New Tweet!</button>
+  <button ng-click="ctrl.randomTweet()" class="btn btn-success" style="margin: 5px">New Tweet!</button>
 
   <br>
   <br>
 
-  <div>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden">{{ ctrl.tweeter }}</button>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick1)" class="btn btn-primary button_array hidden"> {{ ctrl.tweeterNotPick1 }}</button>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden">{{ ctrl.tweeterNotPick2 }}</button>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden">{{ ctrl.tweeterNotPick3 }}</button>
+  <div id="shuffle">
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.tweeter }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.notPick1)" class="btn btn-primary button_array hidden" style="margin: 5px"> {{ ctrl.notPick1 }} </button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.notPick2}}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden" style="margin: 5px">{{ ctrl.notPick3 }}</button>
   </div>
 
   <br>
   <br>
 
-  <label>Scoreboard</label>
+  <label style="margin: 5px">Scoreboard</label>
 
   <br>
 
-  <div>{{ ctrl.counter }}</div>
+  <div style="margin: 5px">{{ ctrl.counter }}</div>
 
 
 </div>
