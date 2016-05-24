@@ -2,10 +2,10 @@
   'use strict';
 
   angular
-    .module('myApp.subsection2', [])
+    .module('myApp.subsection', [])
     .controller('SubsectionController2', SubsectionController2);
 
-  SubsectionController.$inject = ['$scope', '$http'];
+  SubsectionController2.$inject = ['$scope', '$http'];
 
   function SubsectionController2($scope, $http) {
     var self = this;

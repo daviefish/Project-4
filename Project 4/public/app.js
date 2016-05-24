@@ -11,13 +11,13 @@
   config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/subsection2");
+    $urlRouterProvider.otherwise("/subsection");
 
     $stateProvider
       .state('subsection2', {
         url: '/subsection2',
         templateUrl: 'subsection2/subsection2.html',
-        controller: 'Subsection2Controller as ctrl'
+        controller: 'SubsectionController2 as ctrl'
       });
 
     $stateProvider
@@ -26,5 +26,6 @@
         templateUrl: 'subsection/subsection.html',
         controller: 'SubsectionController as ctrl'
       });
+
   }
 })();
