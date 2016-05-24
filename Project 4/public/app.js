@@ -12,7 +12,7 @@
   config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/user");
+    $urlRouterProvider.otherwise("/landing");
 
     $stateProvider
       .state('twitter', {
@@ -22,9 +22,16 @@
       });
 
       $stateProvider
-      .state('user', {
+      .state('landing', {
         url: '/landing',
         templateUrl: 'user/partials/landing.html',
+        controller: 'UserController as ctrl'
+      });
+
+      $stateProvider
+      .state('profile', {
+        url: '/profile',
+        templateUrl: 'user/partials/profile.html',
         controller: 'UserController as ctrl'
       });
 
