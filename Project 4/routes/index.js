@@ -3,12 +3,12 @@
 
 module.exports = function(app, passport) {
 
-  app.get('/subsection2', function(req, res) {
-    res.render('subsection2');
+  app.get('/subsection', function(req, res) {
+    res.render('subsection');
   });
 
-  app.post('/subsection2',
-    passport.authenticate('local', { failureRedirect: '/subsection2' }),
+  app.post('/subsection',
+    passport.authenticate('local', { failureRedirect: '/subsection' }),
     function(req, res) {
       res.redirect('/');
   });
