@@ -32,7 +32,7 @@ app.use(passport.session());
 
 require('./routes/index')(app, passport);
 
-var apiRoutes = ['users', 'index'];
+var apiRoutes = ['users', 'twitter'];
 
 apiRoutes.forEach(function(route) {
   app.use( '/api/' + route, require('./routes/' + route)( express.Router() ) );

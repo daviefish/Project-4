@@ -1,14 +1,23 @@
 /* jslint node: true */
 'use strict';
 
-var ctrl = require('../entities/index/index_controller');
+module.exports = function(app, passport) {
 
-module.exports = function(router) {
+  app.get('/subsection2', function(req, res) {
+    res.render('subsection2');
+  });
 
+  app.post('/subsection2',
+    passport.authenticate('local', { failureRedirect: '/subsection2' }),
+    function(req, res) {
+      res.redirect('/');
+  });
 
-  router.route('/twitter')
-    .get(ctrl.twitter);
+  app.get('/logout', function(req, res) {
+    req.logout();
+    res.redirect('/');
+  });
 
-  return router;
 };
+
 

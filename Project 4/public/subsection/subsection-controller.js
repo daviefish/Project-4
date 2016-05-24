@@ -47,9 +47,9 @@
         return Math.floor(Math.random() * (max - min)) + min;
       }
 
-      var twitterProfiles = ['realDonaldTrump', 'kanyewest', 'justinbieber', 'fisherdavie', 'khamenei_ir', 'fatjew', 'jk_rowling', 'BarackObama', 'GA'];
+      var twitterProfiles = ['realDonaldTrump', 'kanyewest', 'justinbieber', 'fisherdavie', 'khamenei_ir', 'fatjew', 'jk_rowling', 'BarackObama', 'GA', 'maryjblige'];
 
-      var pick = twitterProfiles[getRandomInt(0,9)];
+      var pick = twitterProfiles[getRandomInt(0,10)];
       self.pick = pick;
 
       // access the backend api for the specific pick
@@ -64,11 +64,11 @@
 
         // pick a random tweet from a selection of 100 tweets from that random user
 
-        var pickTweet = self.result.tweets[getRandomInt(0,100)];
+        var pickTweet = self.result.tweets[getRandomInt(0,10)];
 
         self.tweet = pickTweet.text;
 
-        self.tweeter = pickTweet.user.name;
+        self.tweeter = pickTweet.user.screen_name;
         // console.log(self.tweet);
         console.log(self.tweeter);
 
@@ -79,9 +79,9 @@
       // establish twitter handle of NotPick1
 
       var notPick1 = function()  {
-        var twitterUser1 = twitterProfiles[getRandomInt(0,9)];
+        var twitterUser1 = twitterProfiles[getRandomInt(0,10)];
         while (twitterUser1 === pick) {
-          twitterUser1 = twitterProfiles[getRandomInt(0,9)];
+          twitterUser1 = twitterProfiles[getRandomInt(0,10)];
         } return twitterUser1;
       };
 
@@ -109,9 +109,9 @@
       // establish twitter handle of NotPick1
 
       var notPick2 = function()  {
-        var twitterUser2 = twitterProfiles[getRandomInt(0,9)];
+        var twitterUser2 = twitterProfiles[getRandomInt(0,10)];
         while (twitterUser2 === pick || twitterUser2 === self.notPick1) {
-          twitterUser2 = twitterProfiles[getRandomInt(0,9)];
+          twitterUser2 = twitterProfiles[getRandomInt(0,10)];
         } return twitterUser2;
 
       };
@@ -140,9 +140,9 @@
       // establish twitter handle of NotPick3
 
       var notPick3 = function()  {
-        var twitterUser3 = twitterProfiles[getRandomInt(0,9)];
+        var twitterUser3 = twitterProfiles[getRandomInt(0,10)];
         while (twitterUser3 === pick || twitterUser3 === self.notPick1 || twitterUser3 === self.notPick2) {
-          twitterUser3 = twitterProfiles[getRandomInt(0,9)];
+          twitterUser3 = twitterProfiles[getRandomInt(0,10)];
         } return twitterUser3;
 
       };
