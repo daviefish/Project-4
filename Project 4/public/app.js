@@ -3,7 +3,8 @@
 
   angular
     .module('myApp', [
-      'myApp.subsection',
+      'myApp.twitter',
+      'myApp.user',
       'ui.router'
     ])
     .config(config);
@@ -11,20 +12,20 @@
   config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/subsection");
+    $urlRouterProvider.otherwise("/user");
 
     $stateProvider
-      .state('subsection2', {
-        url: '/subsection2',
-        templateUrl: 'subsection2/subsection2.html',
-        controller: 'SubsectionController2 as ctrl'
+      .state('twitter', {
+        url: '/twitter',
+        templateUrl: 'twitter/partials/twitter.html',
+        controller: 'TwitterController as ctrl'
       });
 
-    $stateProvider
-      .state('subsection', {
-        url: '/subsection',
-        templateUrl: 'subsection/subsection.html',
-        controller: 'SubsectionController as ctrl'
+      $stateProvider
+      .state('user', {
+        url: '/landing',
+        templateUrl: 'user/partials/landing.html',
+        controller: 'UserController as ctrl'
       });
 
   }

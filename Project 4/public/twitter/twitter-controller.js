@@ -2,12 +2,12 @@
   'use strict';
 
   angular
-    .module('myApp.subsection', [])
-    .controller('SubsectionController', SubsectionController);
+    .module('myApp.twitter', [])
+    .controller('TwitterController', TwitterController);
 
-  SubsectionController.$inject = ['$scope', '$http'];
+  TwitterController.$inject = ['$scope', '$http'];
 
-  function SubsectionController($scope, $http) {
+  function TwitterController($scope, $http) {
     var self = this;
 
     self.pick = '';
