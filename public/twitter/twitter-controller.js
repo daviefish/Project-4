@@ -27,6 +27,19 @@
 
     function randomTweet() {
 
+      // switch between player 1 and player 2
+
+      var player1Wins = 0;
+      self.player1Wins = 0;
+
+      var player2Wins = 0;
+      self.player2Wins = 0;
+
+      var turn = '';
+
+      turn === ('player 1') ? turn = ('player 2') : turn = ('player 1');
+
+
       // unhide buttons
 
       $('.button_array').removeClass('hidden');
@@ -171,15 +184,21 @@
     }
 
     function checkTweeter(choice) {
-      if (choice===self.tweeter) {
+      if (choice===self.tweeter && turn === 'player1') {
         window.alert("There's a match!");
         randomTweet();
-        self.counter = self.counter + 1;
+        player1Wins = player1Wins + 1;
+      } if (choice===self.tweeter && turn === 'player2') {
+        window.alert("There's a match!");
+        randomTweet();
+        player2Wins = player2Wins + 1;
       } else {
         window.alert('Wrong! The tweet came from ' + self.tweeter);
         randomTweet();
       }
     }
+
+
 
   }
 
