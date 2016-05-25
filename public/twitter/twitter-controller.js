@@ -56,7 +56,7 @@
 
       $http({
         method: 'GET',
-        url: 'http://localhost:3000/api/twitter/twitter?user=' + pick
+        url: '/api/twitter/twitter?user=' + pick
       }).then(function successCallback(response) {
 
         self.result = response.data;
