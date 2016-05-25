@@ -12,7 +12,7 @@
   config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/landing");
+    $urlRouterProvider.otherwise("/twitter");
 
     $stateProvider
       .state('twitter', {

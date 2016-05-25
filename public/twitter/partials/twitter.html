@@ -4,37 +4,22 @@
 
   <input type="image" src="http://1048believe.com/wp-admin/js/twitter-bird-png-transparent-i0.png" ng-click="ctrl.randomTweet()" class="twitter-logo animated infinite pulse"></input>
 
+  <br>
+  <br>
+
    <div class="new-tweet animated lightSpeedIn">
     {{ ctrl.tweet }}
   </div>
 
+  <br>
+
   <div id="shuffle">
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.tweeter }}</button>
-    <button ng-click="ctrl.checkTweeter(ctrl.notPick1)" class="btn btn-primary button_array hidden" style="margin: 5px"> {{ ctrl.notPick1 }} </button>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.notPick2}}</button>
-    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden" style="margin: 5px">{{ ctrl.notPick3 }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden animated rubberBand" style="margin: 5px">{{ ctrl.tweeter }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.notPick1)" class="btn btn-primary button_array hidden animated rubberBand" style="margin: 5px"> {{ ctrl.notPick1 }} </button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden animated rubberBand" style="margin: 5px">{{ ctrl.notPick2}}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary button_array hidden animated rubberBand" style="margin: 5px">{{ ctrl.notPick3 }}</button>
   </div>
 
-<!-- <div class="col-xs-4" style="margin: 0 auto">
-   <table class="table table-striped">
-     <caption>Scoreboard</caption>
-     <thead>
-       <tr>
-         <th>Player 1</th>
-         <th>Player 2</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <td style="text-align: left">{{ ctrl.player1Wins }}</td>
-         <td style="text-align: left">{{ ctrl.player2Wins }}</td>
-       </tr>
-     </tbody>
-   </table>
-</div> -->
-
-{{ctrl.player1Wins}}
-{{ctrl.player2Wins}}
-
+</div>
 
 </div>

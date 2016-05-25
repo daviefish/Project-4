@@ -12,7 +12,7 @@
   config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/landing");
+    $urlRouterProvider.otherwise("/twitter");
 
     $stateProvider
       .state('twitter', {
@@ -60,21 +60,9 @@
     self.randomTweet = randomTweet;
     self.checkTweeter = checkTweeter;
 
-     // switch between player 1 and player 2
-
-    var player1Wins = 0;
-    self.player1Wins = player1Wins + 1;
-
-    var player2Wins = 0;
-    self.player2Wins = player2Wins + 1;
-
-    var turn = '';
-
     // function that cycles through 4 seperate twitter feeds to pull a tweet
 
     function randomTweet() {
-
-      turn === 'player1' ? turn = 'player2' : turn = 'player1';
 
       // unhide buttons
 
@@ -164,16 +152,11 @@
 
     // win logic function
     function checkTweeter(choice) {
-      if (choice===self.tweeter && turn === 'player1') {
+      if (choice===self.tweeter) {
         window.alert("There's a match!");
-        player1Wins = player1Wins + 1;
         return randomTweet();
       } else {
         window.alert('Wrong! The tweet came from ' + self.tweeter);
-        return randomTweet();
-      } if (choice===self.tweeter && turn === 'player2') {
-        window.alert("There's a match!");
-        player2Wins = player2Wins + 1;
         return randomTweet();
       }
     }
