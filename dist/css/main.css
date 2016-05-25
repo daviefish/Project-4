@@ -3349,8 +3349,7 @@ body {
 }
 
 .new-tweet {
-  background:#B2DBBF !important;
-  border: none;
+  font-size: 20px;
 }
 
 .twitter-logo {

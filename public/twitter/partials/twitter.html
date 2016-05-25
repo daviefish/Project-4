@@ -4,9 +4,9 @@
 
   <input type="image" src="http://1048believe.com/wp-admin/js/twitter-bird-png-transparent-i0.png" ng-click="ctrl.randomTweet()" class="twitter-logo animated infinite pulse"></input>
 
-   <p>
+   <div class="rollIn">
     {{ ctrl.tweet }}
-  </p>
+  </div>
 
   <div id="shuffle">
     <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.tweeter }}</button>

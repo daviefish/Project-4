@@ -12,7 +12,7 @@ var controller = {};
 
 controller.twitter = function(req, res, next) {
   var username = req.query.user;
-  client.get('statuses/user_timeline.json?screen_name='+ username + '&count=10  ', function(error, tweets, response) {
+  client.get('statuses/user_timeline.json?screen_name='+ username + '&count=3  ', function(error, tweets, response) {
     if(error) throw error;
     console.log(tweets);  // The favorites.
     console.log(response);  // Raw response object.
