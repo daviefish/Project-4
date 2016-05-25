@@ -8,6 +8,11 @@ var bcrypt = require('bcrypt');
 var userSchema = new Schema({
   username: String,
   password: String,
+  twitter: {
+        id: Number,
+        username: String,
+        displayName: String,
+    }
 });
 
 userSchema.methods.validPassword = function(pwd) {
