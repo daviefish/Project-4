@@ -4,7 +4,7 @@
 
   <input type="image" src="http://1048believe.com/wp-admin/js/twitter-bird-png-transparent-i0.png" ng-click="ctrl.randomTweet()" class="twitter-logo animated infinite pulse"></input>
 
-   <div class="rollIn">
+   <div class="new-tweet animated lightSpeedIn">
     {{ ctrl.tweet }}
   </div>
 
@@ -15,9 +15,26 @@
     <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden" style="margin: 5px">{{ ctrl.notPick3 }}</button>
   </div>
 
-  <label style="margin: 5px">Scoreboard</label>
+<!-- <div class="col-xs-4" style="margin: 0 auto">
+   <table class="table table-striped">
+     <caption>Scoreboard</caption>
+     <thead>
+       <tr>
+         <th>Player 1</th>
+         <th>Player 2</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td style="text-align: left">{{ ctrl.player1Wins }}</td>
+         <td style="text-align: left">{{ ctrl.player2Wins }}</td>
+       </tr>
+     </tbody>
+   </table>
+</div> -->
 
-  <div style="margin: 5px">{{ ctrl.counter }}</div>
+{{ctrl.player1Wins}}
+{{ctrl.player2Wins}}
 
 
 </div>

@@ -33,9 +33,9 @@ module.exports = function(passport) {
     // =========================================================================
     passport.use(new TwitterStrategy({
 
-        consumerKey     : 'bAvKpQx9fnlSBHVQ5QJGzO2AB',
-        consumerSecret  : 'AVmG9sQoGuiW3pdTJZAct42F13o2rMQp59dUcjDbjdwClwwIXW',
-        callbackURL     : 'http://127.0.0.1:3000/auth/twitter/callback'
+        consumerKey     : process.env.CONSUMER_KEY,
+        consumerSecret  : process.env.CONSUMER_SECRET,
+        callbackURL     : 'http://127.0.0.1:3000/login/twitter/return'
 
     },
     function(token, tokenSecret, profile, done) {

@@ -5,24 +5,26 @@ var User = require('../entities/users/users_model');
 
 module.exports = function(passport, Strategy) {
 
-  passport.use(new Strategy(function(username, password, cb) {
-    User.findOne({username: username}, function(err, user) {
-      if (err) return cb(err);
-      if (!user) return cb(null, false);
-      if (user.validPassword(password)) return cb(null, false);
-      return cb(null, user);
-    });
+passport.use(new Strategy({
+    consumerKey: process.env.CONSUMER_KEY,
+    consumerSecret: process.env.CONSUMER_SECRET,
+    callbackURL: 'http://127.0.0.1:3000/login/twitter/return'
+  },
+  function(token, tokenSecret, profile, cb) {
+    // In this example, the user's Twitter profile is supplied as the user
+    // record.  In a production-quality application, the Twitter profile should
+    // be associated with a user record in the application's database, which
+    // allows for account linking and authentication with other identity
+    // providers.
+    return cb(null, profile);
   }));
 
   passport.serializeUser(function(user, cb) {
-    cb(null, user._id);
+    cb(null, user);
   });
 
-  passport.deserializeUser(function(id, cb) {
-    User.findById(id, function (err, user) {
-      if (err) return cb(err);
-      cb(null, user);
-    });
+  passport.deserializeUser(function(obj, cb) {
+    cb(null, obj);
   });
 
 };
