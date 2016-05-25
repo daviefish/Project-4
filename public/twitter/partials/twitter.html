@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h1> Guess That Tweet ! </h1>
+
+  <p>
+    {{ ctrl.tweet }}
+  </p>
+
+  <br>
+
+  <button ng-click="ctrl.randomTweet()" class="btn btn-success" style="margin: 5px">New Tweet!</button>
+
+  <br>
+  <br>
+
+  <div id="shuffle">
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.tweeter }}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.notPick1)" class="btn btn-primary button_array hidden" style="margin: 5px"> {{ ctrl.notPick1 }} </button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick2)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.notPick2}}</button>
+    <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden" style="margin: 5px">{{ ctrl.notPick3 }}</button>
+  </div>
+
+  <br>
+  <br>
+
+  <label style="margin: 5px">Scoreboard</label>
+
+  <br>
+
+  <div style="margin: 5px">{{ ctrl.counter }}</div>
+
+
+</div>
