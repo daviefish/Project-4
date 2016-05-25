@@ -5,10 +5,10 @@ var LocalStrategy    = require('passport-local').Strategy;
 var TwitterStrategy  = require('passport-twitter').Strategy;
 
 // load up the user model
-var User       = require('../entities/users/user_model');
+var User       = require('../entities/users/users_model');
 
 // load the auth variables
-var configAuth = require('./auth');
+var configAuth = require('./auth.js');
 
 module.exports = function(passport) {
 
@@ -33,9 +33,9 @@ module.exports = function(passport) {
     // =========================================================================
     passport.use(new TwitterStrategy({
 
-        consumerKey     : configAuth.twitterAuth.consumerKey,
-        consumerSecret  : configAuth.twitterAuth.consumerSecret,
-        callbackURL     : configAuth.twitterAuth.callbackURL
+        consumerKey     : 'bAvKpQx9fnlSBHVQ5QJGzO2AB',
+        consumerSecret  : 'AVmG9sQoGuiW3pdTJZAct42F13o2rMQp59dUcjDbjdwClwwIXW',
+        callbackURL     : 'http://127.0.0.1:3000/auth/twitter/callback'
 
     },
     function(token, tokenSecret, profile, done) {

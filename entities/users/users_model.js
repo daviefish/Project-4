@@ -9,7 +9,7 @@ var userSchema = new Schema({
   username: String,
   password: String,
   twitter: {
-        id: Number,
+        id: String,
         username: String,
         displayName: String,
     }
