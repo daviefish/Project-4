@@ -3339,34 +3339,6 @@
   animation-name: slideOutUp;
 }
 
-body {
-  background: #FF1654 !important;
-  text-align: center;
-}
-
-.title {
-  color: #F3FFBD;
-}
-
-.new-tweet {
-  font-size: 40px;
-  border-radius: 15px;
-}
-
-.twitter-logo {
-  width: 150px;
-}
-
-.twitter-logo:focus {
-  outline: none;
-}
-
-.btn-round {
-    width: 200px;
-    height: 50px;
-    border-radius: 100px;
-}
-
 .homepage-hero-module {
     border-right: none;
     border-left: none;
@@ -3407,6 +3379,34 @@ body {
 }
 .video-container video.fillWidth {
     width: 100%;
+}
+
+body {
+  background: #FF1654 !important;
+  text-align: center;
+}
+
+.title {
+  color: #F3FFBD;
+}
+
+.new-tweet {
+  font-size: 40px;
+  border-radius: 15px;
+}
+
+.twitter-logo {
+  width: 150px;
+}
+
+.twitter-logo:focus {
+  outline: none;
+}
+
+.btn-round {
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
 }
 
 /* Include this file in your html if you are using the CSP mode. */
