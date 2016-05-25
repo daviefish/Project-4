@@ -1,0 +1,21 @@
+body {
+  background: #FF1654 !important;
+  text-align: center;
+}
+
+.title {
+  color: #F3FFBD;
+}
+
+.new-tweet {
+  background:#B2DBBF !important;
+  border: none;
+}
+
+.twitter-logo {
+  width: 150px;
+}
+
+.twitter-logo:focus {
+  outline: none;
+}

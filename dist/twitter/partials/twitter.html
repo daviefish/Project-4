@@ -1,17 +1,12 @@
 <div class="container">
 
-  <h1> Guess That Tweet ! </h1>
+  <h1 class="title"> Guess That Tweet ! </h1>
 
-  <p>
+  <input type="image" src="http://1048believe.com/wp-admin/js/twitter-bird-png-transparent-i0.png" ng-click="ctrl.randomTweet()" class="twitter-logo animated infinite pulse"></input>
+
+   <p>
     {{ ctrl.tweet }}
   </p>
-
-  <br>
-
-  <button ng-click="ctrl.randomTweet()" class="btn btn-success" style="margin: 5px">New Tweet!</button>
-
-  <br>
-  <br>
 
   <div id="shuffle">
     <button ng-click="ctrl.checkTweeter(ctrl.tweeter)" class="btn btn-primary button_array hidden" style="margin: 5px">{{ ctrl.tweeter }}</button>
@@ -20,12 +15,7 @@
     <button ng-click="ctrl.checkTweeter(ctrl.tweeterNotPick3)" class="btn btn-primary  button_array hidden" style="margin: 5px">{{ ctrl.notPick3 }}</button>
   </div>
 
-  <br>
-  <br>
-
   <label style="margin: 5px">Scoreboard</label>
-
-  <br>
 
   <div style="margin: 5px">{{ ctrl.counter }}</div>
 
