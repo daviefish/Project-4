@@ -84,6 +84,8 @@
         return Math.floor(Math.random() * (max - min)) + min;
       }
 
+
+      var GAProfiles = ['ianspringer', 'toxicityy', 'enavy04', 'SeanPypers' , 'frazood', 'FatChickenGame']
       var twitterProfiles = ['realDonaldTrump', 'kanyewest', 'justinbieber', 'fisherdavie', 'khamenei_ir', 'fatjew', 'jk_rowling', 'BarackObama', 'GA', 'maryjblige'];
 
       var pick = twitterProfiles[getRandomInt(0,10)];
@@ -164,7 +166,6 @@
   }
 
 })();
-
 
 
 
