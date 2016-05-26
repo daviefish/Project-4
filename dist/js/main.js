@@ -86,7 +86,7 @@
 
       var twitterProfiles = ['realDonaldTrump', 'kanyewest', 'justinbieber', 'fisherdavie', 'khamenei_ir', 'fatjew', 'jk_rowling', 'BarackObama', 'GA', 'maryjblige', 'ianspringer', 'toxicityy', 'enavy04', 'SeanPypers' , 'frazood', 'FatChickenGame'];
 
-      var pick = twitterProfiles[getRandomInt(0,10)];
+      var pick = twitterProfiles[getRandomInt(0,16)];
       self.pick = pick;
 
       // access the backend api for the specific pick
@@ -99,7 +99,7 @@
         self.result = response.data;
         console.log(self.result);
 
-        // pick a random tweet from a selection of 100 tweets from that random user
+        // pick a random tweet from a selection of 160 tweets from that random user
 
         var pickTweet = self.result.tweets[getRandomInt(0,3)];
 
@@ -116,9 +116,9 @@
       // establish twitter handle of first false choice
 
       var notPick1 = function()  {
-        var twitterUser1 = twitterProfiles[getRandomInt(0,10)];
+        var twitterUser1 = twitterProfiles[getRandomInt(0,16)];
         while (twitterUser1 === pick) {
-          twitterUser1 = twitterProfiles[getRandomInt(0,10)];
+          twitterUser1 = twitterProfiles[getRandomInt(0,16)];
         } return twitterUser1;
       };
 
@@ -127,9 +127,9 @@
       // establish twitter handle of second false choice
 
       var notPick2 = function()  {
-        var twitterUser2 = twitterProfiles[getRandomInt(0,10)];
+        var twitterUser2 = twitterProfiles[getRandomInt(0,16)];
         while (twitterUser2 === pick || twitterUser2 === self.notPick1) {
-          twitterUser2 = twitterProfiles[getRandomInt(0,10)];
+          twitterUser2 = twitterProfiles[getRandomInt(0,16)];
         } return twitterUser2;
 
       };
@@ -139,9 +139,9 @@
       // establish twitter handle of third false choice
 
       var notPick3 = function()  {
-        var twitterUser3 = twitterProfiles[getRandomInt(0,10)];
+        var twitterUser3 = twitterProfiles[getRandomInt(0,16)];
         while (twitterUser3 === pick || twitterUser3 === self.notPick1 || twitterUser3 === self.notPick2) {
-          twitterUser3 = twitterProfiles[getRandomInt(0,10)];
+          twitterUser3 = twitterProfiles[getRandomInt(0,16)];
         } return twitterUser3;
 
       };
