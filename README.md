@@ -30,7 +30,7 @@ A table of your routes with their auth requirements -->
 
  ##Link
 
- <a href="https://guess-that-tweet.herokuapp.com/#/twitter"</a>
+ https://guess-that-tweet.herokuapp.com/#/twitter
 
 
 
