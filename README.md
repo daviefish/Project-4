@@ -28,6 +28,10 @@ A table of your routes with their auth requirements -->
 
  -I spent a long time trying to get Twitter authentication to work. I should have moved on earlier as it was not essential to the game. 
 
+ ##Link
+
+ <a href="https://guess-that-tweet.herokuapp.com/#/twitter"</a>
+
 
 
 
