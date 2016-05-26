@@ -1,25 +1,33 @@
-	# MEAN Boilerplate
+<!-- An embedded screenshot of the app
+Explanations of the technologies and concepts used
+A couple paragraphs about the general approach you took
+Installation instructions for an instructor to clone down and run your app locally.
+Descriptions of any unsolved problems or major hurdles you had to overcome
+A table of your routes with their auth requirements -->
 
-## Getting Started
+##Guess the Tweet!
 
-This boilerplate uses [npm](https://www.npmjs.com/), [bower](http://bower.io/), and [gulp](http://gulpjs.com/). Make sure they are properly installed before continuing.
+#Technologies
+ 
+ 1. Node
+ 2. Angular
+ 3. APIs
 
-1. Install node packages.
+ #Approach
 
-```
-npm install
-```
+ Used the mean boilerplate for backend. 
+ Built out the front-end in the public folder.
 
-2. Install bower packages. Note: Bower packages are installed in `public/bower_components`.
+ #Installation Instructions
 
-```
-bower install
-```
+ - npm install
+ - bower install
+ - use gulp to run server
 
-3. Run the default gulp task to start your server.
+ #Unsolved problems
 
-```
-gulp
-```
+ -I spent a long time trying to get Twitter authentication to work. I should have moved on earlier as it was not essential to the game. 
 
-When your server is running you can go to `localhost:3000` in your browser.
+
+
+
