@@ -42,26 +42,6 @@
   'use strict';
 
   angular
-    .module('myApp.user', [])
-    .controller('UserController', UserController);
-
-  UserController.$inject = ['$scope', '$http'];
-
-  function UserController($scope, $http) {
-    var self = this;
-
-  }
-
-
-})();
-
-
-
-
-(function() {
-  'use strict';
-
-  angular
     .module('myApp.twitter', [])
     .controller('TwitterController', TwitterController);
 
@@ -184,6 +164,26 @@
   }
 
 })();
+
+
+
+(function() {
+  'use strict';
+
+  angular
+    .module('myApp.user', [])
+    .controller('UserController', UserController);
+
+  UserController.$inject = ['$scope', '$http'];
+
+  function UserController($scope, $http) {
+    var self = this;
+
+  }
+
+
+})();
+
 
 
 

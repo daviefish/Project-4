@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var passport     = require('passport');
-var Strategy  = require('passport-twitter').Strategy;
+var TwitterStrategy  = require('passport-twitter').Strategy;
 
 var port = process.env.PORT || 3000;
 var mongoUrl = process.env.MONGODB_URI || 'mongodb://localhost:27017/db';
